@@ -7,14 +7,15 @@ public class Main {
         for (int num : nums)
             bst.add(num);
         bst.preOrder();
-
         System.out.println();
 
         bst.inOder();
-
         System.out.println();
 
         bst.postOrder();
+        System.out.println();
+
+        bst.preOrderNR();
         System.out.println();
         //System.out.println(bst);
     }

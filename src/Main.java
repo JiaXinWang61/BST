@@ -9,7 +9,14 @@ public class Main {
         bst.preOrder();
 
         System.out.println();
-        System.out.println(bst);
+
+        bst.inOder();
+
+        System.out.println();
+
+        bst.postOrder();
+        System.out.println();
+        //System.out.println(bst);
     }
 
 }

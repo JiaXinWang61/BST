@@ -84,6 +84,33 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
+    //二分搜索树的中序遍历
+    public void inOder() {
+        inOder(root);
+    }
+
+    //中序遍历以node为结点的二分搜索树，递归算法
+    private void inOder(Node node) {
+        if (node != null) {
+            inOder(node.left);
+            System.out.println(node.e);
+            inOder(node.right);
+        }
+    }
+
+    //后序遍历
+    public void postOrder() {
+        postOrder(root);
+    }
+
+    private void postOrder(Node node) {
+        if (node != null) {
+            postOrder(node.left);
+            postOrder(node.right);
+            System.out.println(node.e);
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
